@@ -1,0 +1,18 @@
+@mixin flex($direction, $wrap: wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: $wrap;
+}
+
+@mixin bordePrimario($grosor, $color) {
+    border: $grosor solid $color;
+    border-top: 1.5px solid $color;
+}
+
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}

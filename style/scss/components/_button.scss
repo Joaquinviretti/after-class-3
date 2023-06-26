@@ -1,0 +1,18 @@
+/* Button */
+.button {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 8px 14px;
+    display: inline-block;
+    border-radius: 20px;
+
+    &:hover {
+            background-color: rgb(28, 28, 28);
+    }
+}
+
+.button--danger {
+    @extend .button;
+    background-color: red;
+}
